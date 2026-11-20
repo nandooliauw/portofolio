@@ -77,7 +77,7 @@ def main() -> int:
         fill=DIM,
     )
 
-    for index, label in enumerate(("github.com/nandoofr298", "linkedin.com/in/nandooliauw", "Bekasi, Indonesia")):
+    for index, label in enumerate(("github.com/nandooliauw", "linkedin.com/in/nandooliauw", "Bekasi, Indonesia")):
         x = 86 + index * 340
         draw.rounded_rectangle([(x, 452), (x + 8, 460)], radius=2, fill=ACCENT)
         draw.text((x + 18, 448), label, font=font(MONO, 17), fill=DIM)
