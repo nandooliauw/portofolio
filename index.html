@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fernando Iskandar — Frontend engineer & security tooling</title>
+<meta name="description" content="Frontend engineer in Jakarta with 4+ years building web apps, internal automation tooling, and open-source security tools in Python.">
+<meta name="author" content="Fernando Iskandar">
+<meta name="theme-color" content="#0b0f14">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fernando Iskandar — Frontend engineer & security tooling">
+<meta property="og:description" content="Frontend engineer in Jakarta. Builds web apps, internal automation tooling, and open-source security tools that ship with tests and real evidence.">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Fernando Iskandar, home">
+      <span class="brand-mark">FI</span>
+      <span class="brand-text">Fernando Iskandar</span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Bekasi / Jakarta · open to freelance</p>
+    <h1>I build web interfaces<br>and the tools that check them.</h1>
+    <p class="lede">
+      Frontend engineer with 4+ years shipping product interfaces — currently at
+      <a href="https://www.linkedin.com/company/intiva-id" rel="noopener">Intiva.id</a>.
+      Outside work I write Python tooling that audits HTTP security headers and
+      detects authentication attacks in log files.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#work">See selected work</a>
+      <a class="btn" href="mailto:fernando.iskandar298@gmail.com">Email me</a>
+    </div>
+    <dl class="stats">
+      <div><dt>Experience</dt><dd>4 yrs 4 mo</dd></div>
+      <div><dt>Public tools</dt><dd>2</dd></div>
+      <div><dt>Tests written</dt><dd>54</dd></div>
+      <div><dt>Based in</dt><dd>West Java, ID</dd></div>
+    </dl>
+  </section>
+
+  <!-- WORK -->
+  <section class="wrap" id="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <p class="section-note">Two open-source tools, built end to end: design, implementation, tests, documentation.</p>
+    </div>
+
+    <article class="project">
+      <div class="project-media">
+        <img src="assets/headerhawk.png" alt="headerhawk report card showing a score of 35 out of 100 with a list of failing HTTP security header checks" loading="lazy">
+      </div>
+      <div class="project-body">
+        <p class="tag">Python · CLI · security</p>
+        <h3>headerhawk</h3>
+        <p>
+          Audits HTTP security headers, cookie attributes, TLS configuration and
+          accidentally published files for a single URL. Produces a weighted
+          0–100 score plus Markdown, HTML and JSON reports a client can read.
+        </p>
+        <ul class="facts">
+          <li>13 checks, weights documented so a score can be argued with</li>
+          <li>TLS read from the live handshake — protocol, cipher, certificate expiry</li>
+          <li>31 offline unit tests, standard library only, zero install</li>
+        </ul>
+        <p class="links">
+          <a href="https://github.com/nandoofr298/headerhawk" rel="noopener">Repository ↗</a>
+          <a href="https://raw.githubusercontent.com/nandoofr298/headerhawk/main/examples/report-example.md" rel="noopener">Sample report ↗</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="project reverse">
+      <div class="project-media">
+        <img src="assets/loghawk.png" alt="loghawk detection report listing seven findings across critical, high, medium and low severities" loading="lazy">
+      </div>
+      <div class="project-body">
+        <p class="tag">Python · CLI · blue team</p>
+        <h3>loghawk</h3>
+        <p>
+          Offline detection engine for OpenSSH <code>auth.log</code> and Windows
+          Security CSV exports. Finds brute force, password spray, username
+          enumeration and the case that matters most: a login that succeeded
+          after repeated failures.
+        </p>
+        <ul class="facts">
+          <li>7 detections mapped to MITRE ATT&amp;CK techniques</li>
+          <li>Every finding carries line numbers, remediation and the thresholds used</li>
+          <li>23 offline unit tests; sample logs are synthetic, regenerable by script</li>
+        </ul>
+        <p class="links">
+          <a href="https://github.com/nandoofr298/loghawk" rel="noopener">Repository ↗</a>
+          <a href="https://raw.githubusercontent.com/nandoofr298/loghawk/main/examples/report-example.md" rel="noopener">Sample report ↗</a>
+        </p>
+      </div>
+    </article>
+
+    <h3 class="subhead">Client &amp; internal work</h3>
+    <p class="section-note tight">
+      Commercial projects are under NDA, so the repositories are private.
+      Scope and stack below; code walkthrough available on request.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <p class="tag">TypeScript · React</p>
+        <h4>Device automation platform</h4>
+        <p>Internal tooling that drives a fleet of Android devices for campaign operations — queueing, scheduling and result reporting.</p>
+      </article>
+      <article class="card">
+        <p class="tag">TypeScript · dashboards</p>
+        <h4>Campaign operations dashboard</h4>
+        <p>Operational view over job status, retries and device health, replacing manual spreadsheet tracking.</p>
+      </article>
+      <article class="card">
+        <p class="tag">TypeScript · payments</p>
+        <h4>Cashier &amp; order flow</h4>
+        <p>Point-of-sale interface with order state, receipts and a payment gateway integration for a small retail client.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="wrap" id="experience">
+    <div class="section-head">
+      <h2>Experience</h2>
+      <p class="section-note">4 years 4 months across product frontend, internal tooling and support.</p>
+    </div>
+    <ol class="timeline">
+      <li>
+        <div class="when">Feb 2024 — Present</div>
+        <div class="what">
+          <h3>Macro Engineer · <a href="https://www.linkedin.com/company/intiva-id" rel="noopener">Intiva.id</a></h3>
+          <p>Build and maintain internal automation tooling and the web interfaces around it. Work spans the browser layer, device fleets and the reporting operators rely on.</p>
+          <p class="stack">TypeScript · React · Python · Android automation</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Oct 2023 — Feb 2024</div>
+        <div class="what">
+          <h3>Front End Engineer Trainee · <a href="https://www.linkedin.com/company/seagrp" rel="noopener">Sea</a></h3>
+          <p>Frontend internship inside a consumer internet group (Shopee, Garena, Monee). Component work and interface implementation in a large codebase.</p>
+          <p class="stack">JavaScript · React · component systems</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jul 2023 — Sep 2023</div>
+        <div class="what">
+          <h3>Technical Support · PT Pertamina Lubricants</h3>
+          <p>Technical support for internal users: troubleshooting, ticket handling, and documentation of recurring issues.</p>
+          <p class="stack">Support operations · troubleshooting</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jul 2021 — Oct 2021</div>
+        <div class="what">
+          <h3>Android Developer · Indonesia Biru Foundation</h3>
+          <p>Built an Android application for a non-profit environmental programme in Lombok.</p>
+          <p class="stack">Android · Java/Kotlin</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="wrap" id="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <p class="section-note">What I actually use, grouped by where it shows up.</p>
+    </div>
+    <div class="grid three">
+      <article class="card">
+        <h4>Frontend</h4>
+        <ul class="plain">
+          <li>TypeScript, JavaScript (ES2020+)</li>
+          <li>React, component architecture</li>
+          <li>HTML, modern CSS, responsive layout</li>
+          <li>Accessibility basics, semantic markup</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h4>Tooling &amp; backend</h4>
+        <ul class="plain">
+          <li>Python (standard library first)</li>
+          <li>HTTP, TLS and header-level debugging</li>
+          <li>CLI design, exit codes, CI-friendly output</li>
+          <li>Git, Linux, log analysis</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h4>Security</h4>
+        <ul class="plain">
+          <li>HTTP security headers, cookies, TLS review</li>
+          <li>Authentication log analysis, detection rules</li>
+          <li>MITRE ATT&amp;CK mapping</li>
+          <li>Reporting: findings, evidence, remediation</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="wrap about" id="about">
+    <div class="section-head">
+      <h2>How I work</h2>
+    </div>
+    <div class="about-grid">
+      <p>
+        I came into engineering through the frontend: interfaces people actually
+        touch, then the internal tools that keep those interfaces honest. That
+        path explains the two habits I bring to every project — build the thing
+        end to end, and prove it works before claiming it does.
+      </p>
+      <p>
+        So when I ship a tool, it comes with tests you can run offline, a README
+        that states its limitations, and sample output captured from a real run.
+        If something is not verified, I say so instead of dressing it up. That is
+        also how I prefer to work with clients: scope written down, changes made
+        explicit, no surprises at handover.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="wrap contact" id="contact">
+    <h2>Let's talk</h2>
+    <p class="lede">
+      Available for freelance frontend work and security tooling. Fastest route
+      is email — I reply the same day on weekdays.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:fernando.iskandar298@gmail.com">fernando.iskandar298@gmail.com</a>
+      <a class="btn" href="https://github.com/nandoofr298" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/nandooliauw" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Fernando Iskandar · Bekasi, Indonesia</p>
+    <p class="mono">Hand-written HTML &amp; CSS. No frameworks, no trackers.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
