@@ -45,6 +45,9 @@ Content sources used for this first version:
 
 - **Experience** — the public LinkedIn profile (`linkedin.com/in/nandooliauw`)
 - **Work** — the two public repositories, `headerhawk` and `loghawk`
+- **Certifications** — read from the original certificate images in
+  `macbook/Web Portofolio/` (Google Data Analytics, MikroTik MTCNA), then
+  re-exported to `assets/cert-*.jpg` at web size
 - **Client work** — described by scope only; repositories are private, names withheld
 
 Numbers on the page are real: `4 yrs 4 mo` from the LinkedIn profile, `54` tests

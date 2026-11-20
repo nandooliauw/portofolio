@@ -326,6 +326,52 @@ h2 {
 .plain { margin: 8px 0 0; padding-left: 18px; color: var(--text-dim); font-size: 0.94rem; }
 .plain li { margin-bottom: 5px; }
 
+/* --- certifications --- */
+
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+
+.cert {
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.cert-media {
+  display: block;
+  padding: 12px;
+  background: #eef2f7;
+  border-bottom: 1px solid var(--line);
+}
+.cert-media img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+.cert-media:hover img { transform: scale(1.015); }
+.cert-media.tall img { height: 300px; }
+
+.cert-body { padding: 18px 20px 20px; }
+.cert-body h3 { margin: 4px 0 8px; font-size: 1.05rem; }
+.cert-body p { margin: 0 0 14px; color: var(--text-dim); font-size: 0.94rem; }
+
+.cert-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 26px;
+  margin: 0;
+}
+.cert-meta dt {
+  font: 500 10.5px/1.4 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-dim);
+}
+.cert-meta dd { margin: 3px 0 0; font-size: 0.9rem; }
+
 /* --- timeline --- */
 
 .timeline {
