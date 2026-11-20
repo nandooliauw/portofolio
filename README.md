@@ -1,6 +1,6 @@
 # portfolio-site
 
-Personal portfolio for Fernando Iskandar — frontend engineer and security
+Personal portfolio for Fernando — frontend engineer and security
 tooling. One static page, hand-written HTML and CSS, no framework, no build
 step, no trackers, no external requests.
 

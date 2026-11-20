@@ -60,7 +60,7 @@ def main() -> int:
             width=3,
         )
 
-    draw.text((86, 96), "FERNANDO ISKANDAR", font=font(MONO, 20), fill=DIM)
+    draw.text((86, 96), "FERNANDO", font=font(MONO, 20), fill=DIM)
     draw.text((86, 150), "Frontend engineer", font=font(SANS, 58), fill=TEXT)
     draw.text((86, 220), "& security tooling", font=font(SANS, 58), fill=ACCENT)
 
