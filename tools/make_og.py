@@ -45,6 +45,21 @@ def main() -> int:
     draw.rounded_rectangle([(36, 36), (W - 36, H - 36)], radius=18, outline=LINE, width=2)
     draw.rectangle([(36, 36), (44, H - 36)], fill=ACCENT)
 
+    # portrait on the right, circular, with the same ring as the site avatar
+    photo_path = "assets/profile.jpg"
+    if os.path.isfile(photo_path):
+        size = 260
+        cx, cy = W - 210, 190
+        photo = Image.open(photo_path).convert("RGB").resize((size, size), Image.LANCZOS)
+        mask = Image.new("L", (size, size), 0)
+        ImageDraw.Draw(mask).ellipse((0, 0, size - 1, size - 1), fill=255)
+        image.paste(photo, (cx - size // 2, cy - size // 2), mask)
+        draw.ellipse(
+            [(cx - size // 2 - 8, cy - size // 2 - 8), (cx + size // 2 + 8, cy + size // 2 + 8)],
+            outline=ACCENT,
+            width=3,
+        )
+
     draw.text((86, 96), "FERNANDO ISKANDAR", font=font(MONO, 20), fill=DIM)
     draw.text((86, 150), "Frontend engineer", font=font(SANS, 58), fill=TEXT)
     draw.text((86, 220), "& security tooling", font=font(SANS, 58), fill=ACCENT)
